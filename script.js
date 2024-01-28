@@ -19,11 +19,11 @@ greetingElement.textContent = greetingMessage;
 // GRID INTELIGENTE
 const container = document.querySelector(".offer__list-item");
 
-const observer = new ResizeObserver(() => { //mudanças no tamanho do elemento 
-    const containerWidth = container.offsetWidth; //largura total do elemento, incluindo largura do conteúdo, bordas e preenchimento.
-    const numColumns = Math.floor(containerWidth / 200); //número de colunas com base na largura do container
+const observer = new ResizeObserver(() => { // Mudanças no tamanho do elemento 
+    const containerWidth = container.offsetWidth; // Largura total do elemento, incluindo largura do conteúdo, bordas e preenchimento.
+    const numColumns = Math.floor(containerWidth / 200); // Número de colunas com base na largura do container
 
-    //largura mínima de 200px e máxima de 1fr (uma fração do espaço disponível).
+    // Largura mínima de 200px e máxima de 1fr (uma fração do espaço disponível).
     container.style.gridTemplateColumns = `repeat(${numColumns}, minmax(200px, 1fr))`;
 
     console.log({
@@ -34,5 +34,5 @@ const observer = new ResizeObserver(() => { //mudanças no tamanho do elemento
     });
 });
 
-//observando a mudança do elemento
+// Observando a mudança do elemento
 observer.observe(container);

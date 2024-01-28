@@ -7,8 +7,9 @@
     <title>Spotify Imersão</title>
         <link rel="stylesheet" href="src/styles/reset.css">
         <link rel="stylesheet" href="src/styles/vars.css">
-        <link rel="stylesheet" href="src/styles/main-content.css">
         <link rel="stylesheet" href="src/styles/sidebar-footer.css">
+        <link rel="stylesheet" href="src/styles/main-content.css">
+        <link rel="stylesheet" href="src/styles/media-queries.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
     integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
@@ -105,9 +106,9 @@
                  </div>
 
                 <!-- LIST ITEM 1 -->
-                <div class="offer__scroll-container">
-                    <div class="offer__list">
-                        <section class="offer__list-item">
+                <div class="offer-scroll-container">
+                    <div class="offer-list">
+                        <section class="offer-list-item">
                             <!-- CARD 1 -->
                             <a href="" class="cards">
                                 <div class="cards card1">
@@ -231,22 +232,41 @@
                     </div>
                 </div>
             </div>
-            
-        </main>
+            <div id="result-artist" class="hidden">
+                <div class="grid-container">
+                    <div class="artist-card" id="">
+                        <div class="card-img">
+                            <img id="artist-img" class="artist-img" />
+                            <div class="play">
+                                <span class="fa fa-solid fa-play"></span>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <a title="Foo Fighters" class="vst" href=""></a>
+                            <span class="artist-name" id="artist-name"></span>
+                            <span class="artist-categorie">Artista</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
 
-        <footer class="disclaimer-premium">
-            <div class="text">
-              <p class="disclaimer-premium-title">Testar o Premium de graça</p>
-              <p class="disclaimer-premium-subtitle">
+    <!-- FOOTER -->
+    <footer class="disclaimer-premium">
+        <div class="text">
+            <p class="disclaimer-premium-title">Testar o Premium de graça</p>
+            <p class="disclaimer-premium-subtitle">
                 Inscreva-se para curtir música ilimitada e podcasts só com alguns
                 anúncios. Não precisa de cartão de crédito.
-              </p>
-            </div>
-            <div class="button">
-              <button type="button">Inscreva-se grátis</button>
-            </div>
-        </footer>
-        
-    </div>
+            </p>
+        </div>
+        <div class="button">
+            <button type="button">Inscreva-se grátis</button>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/script.js"></script>
 </body>
 </html>
